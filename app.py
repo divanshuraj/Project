@@ -9,7 +9,7 @@ app=Flask(__name__)
 @app.route('/')
 def xyz():
      return render_template('app.html')
-app.route('data',methods=['POST'])
+app.route('/data',methods=['POST'])
 def obj():
     num1=request.form['a']
     num2=request.form['b']
